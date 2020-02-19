@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Lato';
     src: local('Lato-Light');
-    src: url(assets/fonts/Lato/Lato-Light.ttf);
+    src: url(../assets/fonts/Lato/Lato-Light.ttf);
     font-weight: 300;
     font-style: normal;
 }
@@ -9,7 +9,7 @@
 @font-face {
     font-family: 'Lato';
     src: local('Lato-Regular');
-    src: url(assets/fonts/Lato/Lato-Regular.ttf);
+    src: url(../assets/fonts/Lato/Lato-Regular.ttf);
     font-weight: 400;
     font-style: normal;
 }
@@ -17,7 +17,7 @@
 @font-face {
     font-family: 'Lato';
     src: local('Lato-Bold');
-    src: url(assets/fonts/Lato/Lato-Bold.ttf);
+    src: url(../assets/fonts/Lato/Lato-Bold.ttf);
     font-weight: 700;
     font-style: normal;
 }
@@ -25,7 +25,7 @@
 @font-face {
     font-family: 'Lato';
     src: local('Lato-Black');
-    src: url(assets/fonts/Lato/Lato-Black.ttf);
+    src: url(../assets/fonts/Lato/Lato-Black.ttf);
     font-weight: 900;
     font-style: normal;
 }
@@ -181,69 +181,4 @@ body {
     text-align: justify;
     padding-top: 17px;
     font-weight: 300;
-}
-
-.wrapper {
-    width: 940px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.line1 {
-    display: flex;
-}
-
-.item {
-    padding-right: 18px;
-    display: flex;
-    padding-left: 1px;
-    padding-top: 0px;
-}
-
-.blocks {
-    padding-top: 44px;
-}
-
-.pen {
-    margin-top: 4px;
-    border: #666d89 2px solid;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-}
-
-.pen img {
-    padding-top: 13px;
-    padding-left: 11px;
-}
-
-.text {
-    padding-left: 20px;
-    width: 220px;
-}
-
-.text h3 {
-    padding-bottom: 10px;
-    color: #666d89;
-    font-size: 18px;
-    font-weight: 800;
-}
-
-.text p {
-    color: #666d89;
-    font-size: 12px;
-    text-align: justify;
-    line-height: 20px;
-}
-
-.item2 .pen img {
-    padding-left: 18px;
-}
-
-.item3 {
-    padding-left: 5px;
-}
-
-.line2 {
-    display: flex;
 }
