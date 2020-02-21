@@ -49,10 +49,10 @@
         .container__wrapper {
             display: flex;
             justify-content: space-between;
-            align-items: center;
             width: 940px;
             margin-left: auto;
             margin-right: auto;
+            align-items: center;
         }
         
         .header {
@@ -176,12 +176,12 @@
         }
         
         .servises__item p {
+            padding-top: 17px;
             color: #666d89;
             font-size: 18px;
+            font-weight: 300;
             line-height: 30px;
             text-align: justify;
-            padding-top: 17px;
-            font-weight: 300;
         }
         
         .wrapper {
@@ -195,8 +195,8 @@
         }
         
         .item {
-            padding-right: 18px;
             display: flex;
+            padding-right: 18px;
             padding-left: 1px;
             padding-top: 0px;
         }
