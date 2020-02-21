@@ -175,7 +175,7 @@
             color: #666d89;
         }
         
-        .sub-title {
+        .servises__item p {
             color: #666d89;
             font-size: 18px;
             line-height: 30px;
@@ -269,7 +269,7 @@
         }
         
         .item6 img {
-            padding-left: 14px;
+            padding-left: 12px;
             padding-top: 12px;
         }
         
