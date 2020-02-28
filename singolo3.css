@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato-Light');
+    src: url(assets/fonts/Lato/Lato-Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato-Regular');
+    src: url(assets/fonts/Lato/Lato-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato-Bold');
+    src: url(assets/fonts/Lato/Lato-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato-Black');
+    src: url(assets/fonts/Lato/Lato-Black.ttf);
+    font-weight: 900;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 30px;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*  */
+
+.container {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.quote {
+    height: 650px;
+    border-bottom: 6px solid #ea676b;
+    background-color: #f06c64;
+}
+
+.quote__title {
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.quote__title h3 {
+    margin-bottom: 19px;
+    font-size: 30px;
+    font-weight: 800;
+    color: #f0d8d9;
+}
+
+.quote__title p {
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 300;
+    color: #f0d8d9;
+    line-height: 30px;
+}
+
+.quote__form {
+    width: 620px;
+}
+
+.form {
+    display: block;
+    flex-direction: column;
+}
+
+.form__wrapper {
+    display: flex;
+    padding-top: 4px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 605px;
+    height: 38px;
+    padding-left: 14px;
+    background-color: #d6564f;
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    letter-spacing: 0.3px;
+}
+
+input[type="text"],
+input[type="email"],
+::placeholder {
+    color: #f48c8f;
+    font-size: 11px;
+}
+
+textarea::placeholder {
+    color: #f48c8f;
+    font-size: 11px;
+}
+
+.textarea {
+    border: 0;
+    border-radius: 5px;
+    background-color: #d6564f;
+    /* padding-bottom: 15px; */
+    padding-left: 16px;
+    padding-top: 15px;
+}
+
+.contacts__form {
+    margin-left: 20px;
+}
