@@ -610,7 +610,7 @@ button {
 }
 
 .contacts img {
-    height: 11px;
+    height: 10px;
     padding-right: 10px;
 }
 
@@ -637,7 +637,8 @@ button {
     font-size: 12px;
     color: #f0d8d9;
     text-decoration: none;
-    margin-top: 3px;
+    margin-top: 4px;
+    padding-left: 1px;
 }
 
 .mail {
@@ -651,9 +652,10 @@ button {
     text-decoration: none;
 }
 
-.mail img {
+
+/* .mail img {
     height: 10px;
-}
+} */
 
 .footer {
     display: flex;
@@ -662,67 +664,51 @@ button {
     justify-content: space-between;
 }
 
+.footer .container2 {
+    display: flex;
+    justify-content: space-between;
+}
+
 .footer__social {
     display: flex;
-    position: absolute;
-    left: 1078px;
+    justify-content: space-between;
+    width: 153px;
 }
 
 .footer__copyright {
-    margin-top: 25px;
+    margin-top: -3px;
 }
 
-.footer__icons {
-    margin-top: 21px;
-}
-
-.footer__social .icon {
-    margin-right: 8px;
-}
-
-.footer__copyright span {
+.footer span {
     font-size: 12px;
     color: #666d89;
-    margin-left: 40px;
 }
 
-.facebook {
+.icon1 {
+    border: 1px solid #666d89;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.facebook1 {
     background: url(assets/img/facebook.png) no-repeat center;
-    border: 1px solid #666d89;
-    padding: 5px;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
 }
 
-.google {
+.google1 {
     background: url(assets/img/google+.png) no-repeat center;
-    border: 1px solid #666d89;
-    padding: 5px;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
 }
 
-.twitter {
+.twitter1 {
     background: url(assets/img/twitter.png) no-repeat center;
-    border: 1px solid #666d89;
-    padding: 5px;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
 }
 
-.linkedin {
+.linkedin1 {
     background: url(assets/img/linkedin.png) no-repeat center;
-    border: 1px solid #666d89;
-    padding: 5px;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
 }
 
-.icon:hover {
+.icon:hover,
+.icon1:hover {
     border: 1px solid white;
     transition: 0.3s all;
     cursor: pointer;
