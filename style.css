@@ -122,9 +122,6 @@ body {
     letter-spacing: 1px;
 }
 
-
-/* banner */
-
 .banner {
     height: 594px;
     background-color: #f06c64;
@@ -168,9 +165,6 @@ body {
     left: 539px;
     top: 107px;
 }
-
-
-/* servises */
 
 .servises {
     height: 494px;
@@ -291,9 +285,6 @@ body {
 .item6 .text {
     padding-left: 23px;
 }
-
-
-/* singolo 2 */
 
 .container2 {
     width: 940px;
@@ -471,9 +462,6 @@ body {
     height: 20px;
 }
 
-
-/* singolo 3 */
-
 .container2 {
     width: 940px;
     margin-left: auto;
@@ -562,7 +550,6 @@ textarea::placeholder {
     border: 0;
     border-radius: 5px;
     background-color: #d6564f;
-    /* padding-bottom: 15px; */
     padding-left: 16px;
     padding-top: 12px;
     resize: none;
@@ -651,11 +638,6 @@ button {
     color: #f0d8d9;
     text-decoration: none;
 }
-
-
-/* .mail img {
-    height: 10px;
-} */
 
 .footer {
     display: flex;
