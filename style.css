@@ -113,6 +113,12 @@ body {
     text-decoration: none;
 }
 
+.active {
+    text-decoration: underline !important;
+    color: #f06c64 !important;
+    transition: ease-in-out 0.2s;
+}
+
 .header__list li a:hover {
     color: #f06c64;
     transition: ease-in-out 0.2s;
@@ -523,7 +529,7 @@ input[type="email"] {
 
 input[type="text"],
 input[type="email"],
-::placeholder {
+ ::placeholder {
     color: #f48c8f;
     font-size: 11px;
 }
