@@ -161,12 +161,32 @@ body {
     position: absolute;
     left: 112px;
     top: 53px;
+    cursor: pointer;
 }
 
 .phone2 {
     position: absolute;
     left: 425px;
     top: 174px;
+    cursor: pointer;
+}
+
+.screen1 {
+    position: absolute;
+    left: 122px;
+    top: 116px;
+    display: none;
+}
+
+.screen2 {
+    position: absolute;
+    right: 201px;
+    top: 183px;
+    display: none;
+}
+
+.turn-on {
+    display: block;
 }
 
 .servises {

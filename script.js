@@ -78,3 +78,19 @@ MENU.addEventListener('click', (event) => {
     };
 }());
 slider('.slider');
+
+// screen
+
+let vertical = document.querySelector('.phone1');
+let screen_V = document.querySelector('.screen1');
+
+vertical.addEventListener('click', function(event) {
+    screen_V.classList.toggle('turn-on');
+});
+
+let gorizontal = document.querySelector('.phone2');
+let screen_G = document.querySelector('.screen2')
+
+gorizontal.addEventListener('click', function(event) {
+    screen_G.classList.toggle('turn-on');
+});
