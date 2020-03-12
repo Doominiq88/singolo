@@ -128,48 +128,45 @@ body {
     letter-spacing: 1px;
 }
 
-.banner {
+.slider {
+    position: relative;
     height: 594px;
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
 }
 
-.pic1 {
-    position: relative;
-    top: 53px;
-    left: 111px;
+.slider .next,
+.slider .prev {
+    font-size: 30px;
+    position: absolute;
+    z-index: 99;
+    border: none;
+    padding: 5px 10px;
+    top: 50%;
+}
+
+.slider .next {
+    right: 0;
+}
+
+.slider .phones {
+    display: none;
+}
+
+.slider .phones.activity {
+    display: block;
 }
 
 .phone1 {
-    box-shadow: 25px 25px 0px rgba(0, 0, 0, .15);
-    border-radius: 25px;
+    position: absolute;
+    left: 112px;
+    top: 53px;
 }
 
 .phone2 {
-    box-shadow: 25px 25px 0px rgba(0, 0, 0, .15);
-    border-radius: 25px;
-}
-
-.pic2 {
-    display: block;
-    position: relative;
-    width: max-content;
-    bottom: 287px;
+    position: absolute;
     left: 425px;
-}
-
-.chev1 {
-    position: absolute;
-    cursor: pointer;
-    left: -69px;
-    top: 228px;
-}
-
-.chev2 {
-    position: absolute;
-    cursor: pointer;
-    left: 539px;
-    top: 107px;
+    top: 174px;
 }
 
 .servises {
