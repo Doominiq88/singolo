@@ -94,3 +94,25 @@ let screen_G = document.querySelector('.screen2')
 gorizontal.addEventListener('click', function(event) {
     screen_G.classList.toggle('turn-on');
 });
+
+
+
+// tag
+
+
+let tags = document.querySelector('.portfolio__tags');
+// console.log(tags);
+tags.onclick = function(event) {
+    let target = event.target;
+    if (target.tagName != 'SPAN') return;
+    active_tag(target);
+};
+let
+
+function active_tag(span) {
+    if (tags) {
+        tags.classList.remove('active_tag');
+    };
+    tags = span;
+    tags.classList.add('active_tag'); // подсветить новый td
+}

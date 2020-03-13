@@ -355,6 +355,11 @@ body {
     font-size: 12px;
 }
 
+.active_tag {
+    border: 1px solid #ffffff !important;
+    color: #ffffff !important;
+}
+
 .tag_selected {
     font-size: 12px;
     color: #ffffff;
