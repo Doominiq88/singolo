@@ -5,6 +5,7 @@ MENU.addEventListener('click', (event) => {
     event.target.classList.add('active');
 });
 
+
 // slider
 
 (function() {
@@ -65,11 +66,9 @@ MENU.addEventListener('click', (event) => {
                 }
             }
         });
-
     };
 
     this.slider = function(selector) {
-
         let slider = document.querySelector(selector);
         if (!slider) {
             return false;
@@ -78,6 +77,7 @@ MENU.addEventListener('click', (event) => {
     };
 }());
 slider('.slider');
+
 
 // screen
 
@@ -95,7 +95,11 @@ gorizontal.addEventListener('click', function(event) {
     screen_G.classList.toggle('turn-on');
 });
 
+
 // tag
+let PICTURES = document.querySelector('.pictures');
+let ROW = PICTURES.querySelectorAll('.pictures__col');
+console.log(ROW);
 
 let tags = document.querySelector('.portfolio__tags');
 // console.log(tags);
@@ -110,10 +114,25 @@ function active_tag(span) {
         tags.classList.remove('active_tag');
     };
     tags = span;
-    tags.classList.add('active_tag'); // подсветить новый td
-}
+    tags.classList.add('active_tag');
+
+    let arr = [0, 1, 2, 3];
+    let arrRandom = [];
+
+    for (let i = 0; i < arr.length; i + 2) {
+        let numRandom = Math.ceil(Math.random() * arr.length - 1);
+        arrRandom.push(arr.splice(numRandom, 1));
+    }
+    let i = 0;
+    ROW.forEach(element => {
+        element.style.order = arrRandom[i];
+        i++;
+    })
+};
+
 
 //border
+
 let PORTFOLIO = document.querySelector('.pictures');
 let borderImg;
 PORTFOLIO.addEventListener('click', function(event) {
