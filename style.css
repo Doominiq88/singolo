@@ -391,13 +391,18 @@ body {
     overflow: hidden;
 }
 
+.active_border {
+    outline: 5px solid #F06C64;
+    outline-offset: -5px;
+}
+
 .pictures__col {
     width: 220px;
     cursor: pointer;
 }
 
 .pic img {
-    padding-bottom: 17px;
+    margin-bottom: 17px;
 }
 
 .about-us {

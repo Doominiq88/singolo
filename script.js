@@ -9,9 +9,7 @@ MENU.addEventListener('click', (event) => {
 
 (function() {
     const sliderInit = function(slider) {
-
-        let sliders = slider.querySelectorAll('.slider > .phones');
-
+        let sliders = slider.querySelectorAll('.phones');
         //   console.log(sliders);
 
         sliders[0].classList.add('activity');
@@ -24,28 +22,24 @@ MENU.addEventListener('click', (event) => {
 
         buttonNext.classList.add('next');
         buttonPrev.classList.add('prev');
+        // console.log(buttonNext, buttonPrev);
 
-        //console.log(buttonNext, buttonPrev);
-
-        slider.appendChild(buttonNext);
-        slider.appendChild(buttonPrev);
+        slider.append(buttonNext);
+        slider.append(buttonPrev);
 
         buttonNext.addEventListener('click', function() {
-
-            //console.log('Click next');
 
             let activeElem = slider.querySelector('div.activity');
 
             if (activeElem != null) {
-                activeElem.classList.remove('activity');
+                let nextElem = activeElem.nextElementSibling;
 
-                let nextElem = activeElem.nextElementSibling.classList.add('activity');
-
-                if (nextElem == null) {
+                if (nextElem.classList.contains('phones')) {
                     activeElem.classList.remove('activity');
-                    // nextElem.classList.add('active');
-                    activeElem.previousElementSibling.classList.add('activity');
-
+                    nextElem.classList.add('activity');
+                } else {
+                    activeElem.classList.remove('activity');
+                    sliders[0].classList.add('activity');
                 }
             }
         });
@@ -55,13 +49,19 @@ MENU.addEventListener('click', (event) => {
             let activeElem = slider.querySelector('div.activity');
 
             if (activeElem != null) {
-                activeElem.classList.remove('activity');
+                let prevElem = activeElem.previousElementSibling;
 
-                let nextElem = activeElem.previousElementSibling.classList.add('activity');
-
-                if (nextElem == null) {
+                if (!prevElem) {
                     activeElem.classList.remove('activity');
-                    activeElem.previousElementSibling.classList.add('activity');
+                    sliders[sliders.length - 1].classList.add('activity');
+
+                } else if (prevElem.classList.contains('phones')) {
+                    activeElem.classList.remove('activity');
+                    prevElem.classList.add('activity');
+
+                } else {
+                    activeElem.classList.remove('activity');
+                    sliders[1].classList.add('activity');
                 }
             }
         });
@@ -95,10 +95,7 @@ gorizontal.addEventListener('click', function(event) {
     screen_G.classList.toggle('turn-on');
 });
 
-
-
 // tag
-
 
 let tags = document.querySelector('.portfolio__tags');
 // console.log(tags);
@@ -107,7 +104,6 @@ tags.onclick = function(event) {
     if (target.tagName != 'SPAN') return;
     active_tag(target);
 };
-let
 
 function active_tag(span) {
     if (tags) {
@@ -116,3 +112,21 @@ function active_tag(span) {
     tags = span;
     tags.classList.add('active_tag'); // подсветить новый td
 }
+
+//border
+let PORTFOLIO = document.querySelector('.pictures');
+let borderImg;
+PORTFOLIO.addEventListener('click', function(event) {
+    console.log(event);
+    let target = event.target;
+    if (target.tagName != 'IMG') return;
+    getBorder(target);
+});
+
+function getBorder(img) {
+    if (borderImg) {
+        borderImg.classList.remove('active_border')
+    }
+    borderImg = img;
+    borderImg.classList.add('active_border');
+};
