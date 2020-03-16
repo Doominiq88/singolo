@@ -14,31 +14,36 @@
             <div class="container__wrapper">
                 <a href="#" class="logo">singolo <span class="star">*</span></a>
                 <nav class="header__navigation">
-                    <ul class="header__list">
-                        <li class="home"><a href="">Home</a></li>
-                        <li><a href="">services</a></li>
-                        <li><a href="">portfolio</a></li>
-                        <li><a href="">about</a></li>
-                        <li><a href="">contact</a></li>
+                    <ul id="menu" class="header__list">
+                        <li class="home"><a href="#home">Home</a></li>
+                        <li><a href="#servises">services</a></li>
+                        <li><a href="#portfolio">portfolio</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#contact">contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <div class="banner">
-            <div class="pic1">
-                <img class="chev1" src="assets/img/chev1.png" alt="qwe">
-
-                <img class="pic phone1" src="assets/img/phone1.png" alt="phone1">
-            </div>
-            <div class="pic2">
-                <img class="chev2" src="assets/img/chev2.png" alt="qwe">
+        <div class="slider">
+            <div class="phones pic1">
+                <img class="phone1" src="assets/img/phone1.png" alt="phone1">
                 <img class="phone2" src="assets/img/phone2.png" alt="phon2">
+                <img class="screen1" src="assets/img/black-screen.png" alt="phon2">
+                <img class="screen2" src="assets/img/black-screen-gorizontal.png" alt="phon2">
             </div>
+            <div class="phones pic2">
+                <img class="slider-phone" src="assets/img/Slide2.png" alt="phone1">
+            </div>
+
+            <img class="next" src="assets/img/chev2.png" alt="click">
+
+            <img class="prev" src="assets/img/chev1.png" alt="click">
+
         </div>
         <section class="servises">
             <div class="wrapper">
                 <div class="servises__item">
-                    <h1>Our Services</h1>
+                    <h1 id="servises">Our Services</h1>
                     <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 </div>
                 <div class="blocks">
@@ -99,15 +104,17 @@
     <section class="portfolio">
         <div class="container2">
             <div class="portfolio__title">
-                <h3 class="title">Portfolio</h3>
+                <h3 id="portfolio" class="title">Portfolio</h3>
                 <p class="sub-title">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
             </div>
+
             <div class="portfolio__tags">
-                <span class="tag tag_selected">All</span>
+                <span class="tag tag_bordered">All</span>
                 <span class="tag tag_bordered">Web Design</span>
                 <span class="tag tag_bordered">Graphic Design</span>
                 <span class="tag tag_bordered">Artwork</span>
             </div>
+
             <div class="pictures">
                 <div class="pictures__col pic">
                     <img src="assets/img/Image1.png" alt="pic">
@@ -136,7 +143,7 @@
     <section class="about-us">
         <div class="container2">
             <div class="about-us__title">
-                <h3>About Us</h3>
+                <h3 id="about">About Us</h3>
                 <p class="sub-title">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             </div>
             <div class="about__photo">
@@ -179,18 +186,29 @@
     <section class="quote">
         <div class="container2">
             <div class="quote__title">
-                <h3>Get a Quote</h3>
+                <h3 id="contact">Get a Quote</h3>
                 <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             </div>
             <div class="form__wrapper">
                 <div class="quote__form">
-                    <form class="form" action="URL" method="POST">
+
+
+                    <form class="form" id="form" action="#">
                         <input type="text" name="text" required placeholder="Name (Required)">
                         <input type="email" name="email" required placeholder="Email (Required)">
-                        <input type="text" name="text" placeholder="Subject">
-                        <textarea class="textarea" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" placeholder="Describe your project in detail..."></textarea>
-                        <button type="submit">Submit</button>
+                        <input type="text" id="subject" name="text" placeholder="Subject">
+                        <textarea id="textarea" class="textarea" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" placeholder="Describe your project in detail..."></textarea>
+                        <button id="btn" type="submit">Submit</button>
+                        <div id="message-block" class="hidden">
+                            <div class="hidden">
+                                <p id="result"></p>
+                                <br>
+                                <button id="close-btn">OK</button>
+                            </div>
+                        </div>
                     </form>
+
+
                 </div>
                 <div class="contacts__form">
                     <div class="form__contacts">
@@ -228,6 +246,7 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
