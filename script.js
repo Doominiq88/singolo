@@ -18,8 +18,8 @@ MENU.addEventListener('click', (event) => {
         let buttonNext = document.createElement('div'),
             buttonPrev = document.createElement('div');
 
-        buttonNext.innerHTML = ">";
-        buttonPrev.innerHTML = "<";
+        // buttonNext.innerHTML = "";
+        // buttonPrev.innerHTML = "";
 
         buttonNext.classList.add('next');
         buttonPrev.classList.add('prev');
@@ -99,7 +99,7 @@ gorizontal.addEventListener('click', function(event) {
 // tag
 let PICTURES = document.querySelector('.pictures');
 let ROW = PICTURES.querySelectorAll('.pictures__col');
-console.log(ROW);
+
 
 let tags = document.querySelector('.portfolio__tags');
 // console.log(tags);
@@ -149,3 +149,32 @@ function getBorder(img) {
     borderImg = img;
     borderImg.classList.add('active_border');
 };
+
+//form
+const FORM = document.getElementById('form');
+const BUTTON = document.getElementById('btn');
+const CLOSE_BUTTON = document.getElementById('close-btn');
+
+FORM.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const textarea = document.getElementById('textarea').value.toString();
+    const subject = document.getElementById('subject').value.toString();
+    document.getElementById('result').innerText = subject;
+    document.getElementById('message-block').classList.remove('hidden');
+
+    if (subject == '' && textarea == '') {
+        document.getElementById('result').innerHTML = 'Письмо отправлено <br/> Без темы <br/> Без описания';
+    } else if (subject == '') {
+        document.getElementById('result').innerHTML = 'Письмо отправлено <br/> Без темы  <br/> Описание: ' + textarea;
+    } else if (textarea == '') {
+        document.getElementById('result').innerHTML = 'Письмо отправлено <br/> Тема: ' + subject + '<br/> Без описания';
+    } else document.getElementById('result').innerHTML = 'Письмо отправлено <br/> Тема: ' + subject + '<br/> Описание: ' + textarea;
+    document.getElementById('pop-up_form').classList.remove('hidden');
+
+});
+
+
+CLOSE_BUTTON.addEventListener('click', () => {
+    form.reset();
+    document.getElementById('message-block').classList.add('hidden');
+});

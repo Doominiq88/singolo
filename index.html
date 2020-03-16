@@ -35,6 +35,10 @@
                 <img class="slider-phone" src="assets/img/Slide2.png" alt="phone1">
             </div>
 
+            <img class="next" src="assets/img/chev2.png" alt="click">
+
+            <img class="prev" src="assets/img/chev1.png" alt="click">
+
         </div>
         <section class="servises">
             <div class="wrapper">
@@ -187,13 +191,24 @@
             </div>
             <div class="form__wrapper">
                 <div class="quote__form">
-                    <form class="form" action="URL" method="POST">
+
+
+                    <form class="form" id="form" action="#">
                         <input type="text" name="text" required placeholder="Name (Required)">
                         <input type="email" name="email" required placeholder="Email (Required)">
-                        <input type="text" name="text" placeholder="Subject">
-                        <textarea class="textarea" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" placeholder="Describe your project in detail..."></textarea>
-                        <button type="submit">Submit</button>
+                        <input type="text" id="subject" name="text" placeholder="Subject">
+                        <textarea id="textarea" class="textarea" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" placeholder="Describe your project in detail..."></textarea>
+                        <button id="btn" type="submit">Submit</button>
+                        <div id="message-block" class="hidden">
+                            <div class="hidden">
+                                <p id="result"></p>
+                                <br>
+                                <button id="close-btn">OK</button>
+                            </div>
+                        </div>
                     </form>
+
+
                 </div>
                 <div class="contacts__form">
                     <div class="form__contacts">
