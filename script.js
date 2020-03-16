@@ -87,6 +87,10 @@ let screen_V = document.querySelector('.screen1');
 vertical.addEventListener('click', function(event) {
     screen_V.classList.toggle('turn-on');
 });
+screen_V.addEventListener('click', function(event) {
+    screen_V.classList.remove('turn-on');
+});
+
 
 let gorizontal = document.querySelector('.phone2');
 let screen_G = document.querySelector('.screen2')
@@ -94,6 +98,10 @@ let screen_G = document.querySelector('.screen2')
 gorizontal.addEventListener('click', function(event) {
     screen_G.classList.toggle('turn-on');
 });
+screen_G.addEventListener('click', function(event) {
+    screen_G.classList.remove('turn-on');
+});
+
 
 
 // tag

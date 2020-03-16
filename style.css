@@ -194,6 +194,7 @@ body {
     left: 122px;
     top: 116px;
     display: none;
+    cursor: pointer;
 }
 
 .screen2 {
@@ -201,6 +202,7 @@ body {
     right: 201px;
     top: 183px;
     display: none;
+    cursor: pointer;
 }
 
 .turn-on {
