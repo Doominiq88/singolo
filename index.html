@@ -4,30 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
     <title>Singolo</title>
 </head>
 
 <body>
+    <header class="header" id="home">
+        <div class="container__wrapper" id="header">
+            <a href="#" class="logo">singolo <span class="star">*</span></a>
+            <nav class="header__navigation" id="wrapper">
+                <ul id="menu" class="header__list">
+                    <li class="home"><a href="#slider">Home</a></li>
+                    <li><a href="#servises">services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <div class="container">
-        <header class="header">
-            <div class="container__wrapper">
-                <a href="#" class="logo">singolo <span class="star">*</span></a>
-                <nav class="header__navigation">
-                    <ul id="menu" class="header__list">
-                        <li class="home"><a href="#home">Home</a></li>
-                        <li><a href="#servises">services</a></li>
-                        <li><a href="#portfolio">portfolio</a></li>
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#contact">contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <div class="slider">
-            <div class="phones pic1">
+        <div id="slider" class="slider sec">
+            <div class="phones pic1   ">
                 <img class="phone1" src="assets/img/phone1.png" alt="phone1">
-                <img class="phone2" src="assets/img/phone2.png" alt="phon2">
+                <img class="phone2 " src="assets/img/phone2.png" alt="phon2">
                 <img class="screen1" src="assets/img/black-screen.png" alt="phon2">
                 <img class="screen2" src="assets/img/black-screen-gorizontal.png" alt="phon2">
             </div>
@@ -38,9 +40,9 @@
             <img class="next" src="assets/img/chev2.png" alt="click">
 
             <img class="prev" src="assets/img/chev1.png" alt="click">
-
         </div>
-        <section class="servises">
+
+        <section id="servises" class="servises sec">
             <div class="wrapper">
                 <div class="servises__item">
                     <h1 id="servises">Our Services</h1>
@@ -101,7 +103,8 @@
             </div>
         </section>
     </div>
-    <section class="portfolio">
+
+    <section id="portfolio" class="portfolio sec">
         <div class="container2">
             <div class="portfolio__title">
                 <h3 id="portfolio" class="title">Portfolio</h3>
@@ -140,10 +143,11 @@
             </div>
         </div>
     </section>
-    <section class="about-us">
+
+    <section id="about" class="about-us sec">
         <div class="container2">
             <div class="about-us__title">
-                <h3 id="about">About Us</h3>
+                <h3>About Us</h3>
                 <p class="sub-title">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             </div>
             <div class="about__photo">
@@ -183,7 +187,8 @@
             </div>
         </div>
     </section>
-    <section class="quote">
+
+    <section id="contact" class="quote sec">
         <div class="container2">
             <div class="quote__title">
                 <h3 id="contact">Get a Quote</h3>

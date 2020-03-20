@@ -5,6 +5,26 @@ MENU.addEventListener('click', (event) => {
     event.target.classList.add('active');
 });
 
+//menu 
+
+document.addEventListener('scroll', onScroll);
+
+function onScroll(event) {
+    const curPos = window.scrollY + document.getElementById('home').offsetHeight;
+    const divs = document.querySelectorAll('.sec');
+    const links = document.querySelectorAll('#menu a');
+
+    divs.forEach((el) => {
+        if (el.offsetTop <= curPos && (el.offsetTop + el.offsetHeight) > curPos) {
+            links.forEach(a => {
+                a.classList.remove('active');
+                if (el.getAttribute('id') === a.getAttribute('href').substring(1)) {
+                    a.classList.add('active')
+                }
+            });
+        }
+    });
+}
 
 // slider
 
@@ -108,13 +128,25 @@ screen_G.addEventListener('click', function(event) {
 let PICTURES = document.querySelector('.pictures');
 let ROW = PICTURES.querySelectorAll('.pictures__col');
 
-
 let tags = document.querySelector('.portfolio__tags');
-// console.log(tags);
 tags.onclick = function(event) {
     let target = event.target;
     if (target.tagName != 'SPAN') return;
     active_tag(target);
+
+
+    ROW.forEach(element => {
+        let arrImg = Array.from(element.querySelectorAll('img'));
+        arrImg.sort(() => Math.random() - 0.5);
+        element.innerHTML = '';
+        arrImg.forEach(el => {
+            element.append(el)
+        })
+
+
+
+    });
+
 };
 
 function active_tag(span) {
@@ -124,18 +156,7 @@ function active_tag(span) {
     tags = span;
     tags.classList.add('active_tag');
 
-    let arr = [0, 1, 2, 3];
-    let arrRandom = [];
 
-    for (let i = 0; i < arr.length; i + 2) {
-        let numRandom = Math.ceil(Math.random() * arr.length - 1);
-        arrRandom.push(arr.splice(numRandom, 1));
-    }
-    let i = 0;
-    ROW.forEach(element => {
-        element.style.order = arrRandom[i];
-        i++;
-    })
 };
 
 
