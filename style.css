@@ -417,7 +417,6 @@ body {
     height: 605px;
     display: flex;
     justify-content: space-between;
-    overflow: hidden;
 }
 
 .active_border {

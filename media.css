@@ -1,0 +1,53 @@
+@media (max-width: 1020px) {
+    .container__wrapper {
+        max-width: 93%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* slider  */
+    .phone1 {
+        width: 181px;
+        height: 365px;
+    }
+    .phone2 {
+        width: calc(458px - 5%);
+    }
+    .servises {
+        height: 660px;
+    }
+    .blocks {
+        display: flex;
+    }
+    .line1 {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    .line2 {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding-top: 0;
+    }
+    .item {
+        margin-bottom: 40px;
+    }
+    /* portfolio */
+    .portfolio {
+        height: 1050px;
+    }
+    .pictures {
+        display: block;
+    }
+    .pictures__col {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .pic img {
+        width: 216px;
+    }
+}
+
+@media (max-width: 375px) {}
