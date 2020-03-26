@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <title>Singolo</title>
 </head>
 
@@ -14,95 +15,100 @@
         <div class="container__wrapper" id="header">
             <a href="#" class="logo">singolo <span class="star">*</span></a>
             <nav class="header__navigation" id="wrapper">
+                <input type="checkbox" id="nav-toggle">
+                <button class="nav-toggle"><label class="goggle" for="nav-toggle"><span class="burger"></span></label></button>
+                <button class="nav-close burger-rotate"><label for="nav-toggle"><span class="burger "></span></label></button>
                 <ul id="menu" class="header__list">
-                    <li class="home"><a href="#slider">Home</a></li>
-                    <li><a href="#servises">services</a></li>
-                    <li><a href="#portfolio">portfolio</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#contact">contact</a></li>
+                    <div class="shade">
+                        <a href="#" class="logo">singolo <span class="star">*</span></a>
+                        <li class="home"><a href="#slider">Home</a></li>
+                        <li><a href="#servises">services</a></li>
+                        <li><a href="#portfolio">portfolio</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </div>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div class="container">
-        <div id="slider" class="slider sec">
-            <div class="phones pic1   ">
-                <img class="phone1" src="assets/img/phone1.png" alt="phone1">
-                <img class="phone2 " src="assets/img/phone2.png" alt="phon2">
-                <img class="screen1" src="assets/img/black-screen.png" alt="phon2">
-                <img class="screen2" src="assets/img/black-screen-gorizontal.png" alt="phon2">
-            </div>
-            <div class="phones pic2">
-                <img class="slider-phone" src="assets/img/Slide2.png" alt="phone1">
-            </div>
 
-            <img class="next" src="assets/img/chev2.png" alt="click">
-
-            <img class="prev" src="assets/img/chev1.png" alt="click">
+    <div id="slider" class="slider sec">
+        <div class="phones pic1   ">
+            <img class="phone1" src="assets/img/phone1.png" alt="phone1">
+            <img class="phone2 " src="assets/img/phone2.png" alt="phon2">
+            <img class="screen1" src="assets/img/black-screen.png" alt="phon2">
+            <img class="screen2" src="assets/img/black-screen-gorizontal.png" alt="phon2">
+        </div>
+        <div class="phones pic2">
+            <img class="slider-phone" src="assets/img/Slide2.png" alt="phone1">
         </div>
 
-        <section id="servises" class="servises sec">
-            <div class="wrapper">
-                <div class="servises__item">
-                    <h1 id="servises">Our Services</h1>
-                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                </div>
-                <div class="blocks">
-                    <div class="line1">
-                        <div class="item item1">
-                            <div class="pen"><img src="assets/img/pen.png" alt="ecl"></div>
-                            <div class="text">
-                                <h3>Custom Design</h3>
-                                <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
-                            </div>
-                        </div>
-                        <div class="item item2">
-                            <div class="pen"><img src="assets/img/bulb.png" alt="ecl"></div>
-                            <div class="text">
-                                <h3>Inovative Ideas</h3>
-                                <p>Quisque luctus, quam eget molestie com-
-                                    <br />modo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
-                            </div>
-                        </div>
-                        <div class="item item3">
-                            <div class="pen"><img src="assets/img/heart.png" alt="ecl"></div>
-                            <div class="text">
-                                <h3>Love Is The Answer</h3>
-                                <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
-                            </div>
+        <img class="next" src="assets/img/chev2.png" alt="click">
+
+        <img class="prev" src="assets/img/chev1.png" alt="click">
+    </div>
+
+    <section id="servises" class="servises sec">
+        <div class="wrapper">
+            <div class="servises__item">
+                <h1 id="servises">Our Services</h1>
+                <p class="servises__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            </div>
+            <div class="blocks">
+                <div class="line1">
+                    <div class="item item1">
+                        <div class="pen"><img src="assets/img/pen.png" alt="ecl"></div>
+                        <div class="text">
+                            <h3>Custom Design</h3>
+                            <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
                         </div>
                     </div>
-                    <div class="line2">
-                        <div class="item item4">
-                            <div class="pen"><img src="assets/img/phone.png" alt="ecl"></div>
-                            <div class="text">
-                                <h3>Responsive Layout</h3>
-                                <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Prae-
-                                    <br /> sent elit leo.</p>
-                            </div>
+                    <div class="item item2">
+                        <div class="pen"><img src="assets/img/bulb.png" alt="ecl"></div>
+                        <div class="text">
+                            <h3>Inovative Ideas</h3>
+                            <p>Quisque luctus, quam eget molestie com-
+                                <br />modo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
                         </div>
-                        <div class="item item5">
-                            <div class="pen"><img src="assets/img/bubble.png" alt="ecl"></div>
-                            <div class="text">
-                                <h3>24 / 7 Support</h3>
-                                <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellen-
-                                    <br /> tesque egestas venenatis lorem .</p>
-                            </div>
+                    </div>
+                    <div class="item item3">
+                        <div class="pen"><img src="assets/img/heart.png" alt="ecl"></div>
+                        <div class="text">
+                            <h3>Love Is The Answer</h3>
+                            <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
                         </div>
-                        <div class="item item6">
-                            <div class="pen"><img src="assets/img/star.png" alt="ecl"></div>
-                            <div class="text">
-                                <h3>Feel Like A Star</h3>
-                                <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.
-                                </p>
-                            </div>
+                    </div>
+                </div>
+                <div class="line2">
+                    <div class="item item4">
+                        <div class="pen"><img src="assets/img/phone.png" alt="ecl"></div>
+                        <div class="text">
+                            <h3>Responsive Layout</h3>
+                            <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Prae-
+                                <br /> sent elit leo.</p>
+                        </div>
+                    </div>
+                    <div class="item item5">
+                        <div class="pen"><img src="assets/img/bubble.png" alt="ecl"></div>
+                        <div class="text">
+                            <h3>24 / 7 Support</h3>
+                            <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellen-
+                                <br /> tesque egestas venenatis lorem .</p>
+                        </div>
+                    </div>
+                    <div class="item item6">
+                        <div class="pen"><img src="assets/img/star.png" alt="ecl"></div>
+                        <div class="text">
+                            <h3>Feel Like A Star</h3>
+                            <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
     <section id="portfolio" class="portfolio sec">
         <div class="container2">
@@ -134,7 +140,7 @@
                     <img src="assets/img/Image7.png" alt="pic">
                     <img src="assets/img/Image11.png" alt="pic">
                 </div>
-                <div class="pictures__col pic">
+                <div class="pictures__col last pic">
                     <img src="assets/img/Image4.png" alt="pic">
                     <img src="assets/img/Image8.png" alt="pic">
                     <img src="assets/img/Image12.png" alt="pic">

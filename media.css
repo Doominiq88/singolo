@@ -1,0 +1,437 @@
+     @media (max-width: 1020px) {
+         .container__wrapper {
+             max-width: 93%;
+         }
+     }
+     
+     @media (max-width: 1000px) {
+         .container2 {
+             width: 90%;
+         }
+         .phone1 {
+             width: 21%;
+         }
+         .phone2 {
+             width: 44%;
+         }
+         .about-us {
+             height: auto;
+         }
+         .blocks {
+             display: flex;
+             padding-bottom: 50px;
+         }
+         .line1 {
+             display: flex;
+             flex-direction: column;
+             width: 50%;
+         }
+         .line2 {
+             display: flex;
+             flex-direction: column;
+             width: 50%;
+             padding-top: 0;
+         }
+         .portfolio {
+             height: auto;
+         }
+         .pictures {
+             height: auto;
+             display: block;
+         }
+         .pictures__col {
+             justify-content: center;
+         }
+         .pictures__col {
+             display: flex;
+             width: 100%;
+         }
+         .pic img {
+             margin-bottom: 20px;
+         }
+         .pic img:not(:last-child) {
+             margin-right: 20px;
+         }
+         .photo-item {
+             width: 32%;
+         }
+         .photo-item img {
+             width: 100%;
+         }
+         .phone2 {
+             top: 168px;
+             left: 342px;
+         }
+         .wrapper {
+             width: 95%;
+         }
+         .servises,
+         .portfolio,
+         .quote {
+             height: auto;
+         }
+         .quote__form {
+             width: 65%;
+             position: relative;
+         }
+         .contacts__form {
+             width: 35%;
+         }
+         input[type="text"],
+         input[type="email"] {
+             width: 100%;
+         }
+         .textarea {
+             width: 100%;
+         }
+     }
+     
+     @media (max-width: 768px) {
+         .slider {
+             height: 490px;
+         }
+         .slider-phone {
+             height: 496px !important;
+             width: 768px !important;
+         }
+         .slider .next {
+             top: 245px;
+         }
+         .pictures {
+             display: block;
+         }
+         .pictures__col {
+             display: flex;
+             width: 100%;
+             justify-content: space-evenly;
+         }
+         .pic img {
+             max-width: 216px;
+         }
+         .about__social {
+             display: flex;
+             margin-top: 25px;
+             margin-bottom: 20px;
+         }
+         .form__wrapper {
+             display: flex;
+             justify-content: space-between;
+             padding-top: 4px;
+         }
+     }
+     
+     @media (max-width: 690px) {
+         .nav-toggle {
+             position: absolute;
+             top: 26px;
+             left: 12px;
+             width: 25px;
+             height: 20px;
+             display: block;
+             border: 0;
+             background-color: transparent;
+         }
+         .nav-toggle label {
+             width: 25px;
+             height: 20px;
+         }
+         .burger,
+         .burger::after,
+         .burger::before {
+             display: inline-block;
+             width: 100%;
+             height: 2px;
+             background-color: #fff;
+         }
+         .burger::after {
+             position: absolute;
+             content: '';
+             left: 0;
+             bottom: 0;
+         }
+         .burger {
+             margin-bottom: 3px;
+         }
+         .burger-rotate {
+             transform: rotate(90deg);
+         }
+         .burger::before {
+             position: absolute;
+             content: '';
+             left: 0;
+             top: 0;
+         }
+         .nav-close {
+             position: absolute;
+             top: 26px;
+             left: 12px;
+             width: 25px;
+             height: 20px;
+             display: block;
+             border: 0;
+             z-index: 5;
+             background-color: transparent;
+         }
+         .nav-close {
+             display: none;
+         }
+         #menu {
+             display: none;
+             position: absolute;
+             padding-top: 232px;
+             top: 0;
+             left: 0;
+             width: 278px;
+             height: 100vh;
+             background-color: #2d303a;
+         }
+         #menu a {
+             font-size: 24px;
+         }
+         .shade {
+             position: absolute;
+             left: 0;
+             top: 0;
+             width: 100vw;
+             height: 100vh;
+             background-color: rgba(0, 0, 0, 0.6);
+             padding-top: 235px;
+         }
+         .shade .logo {
+             display: block;
+             position: absolute;
+             top: 24px;
+             left: 27px;
+         }
+         #menu .logo {
+             font-size: 19px;
+         }
+         .shade a {
+             padding-left: 71px;
+         }
+         .header__list li {
+             display: block;
+         }
+         input#nav-toggle:checked~#menu,
+         input#nav-toggle:checked~.nav-close {
+             display: block;
+         }
+         .header {
+             height: 65px;
+         }
+         #header {
+             justify-content: center;
+         }
+         #menu {
+             display: none;
+         }
+         .pictures__col img:nth-child(3) {
+             display: none;
+         }
+         .slider {
+             height: 430px;
+         }
+         .slider .next {
+             top: 200px;
+         }
+         .phone2 {
+             top: 149px;
+             left: 281px;
+         }
+         .blocks {
+             flex-direction: column;
+             align-items: center;
+         }
+         .pen {
+             width: 67px;
+         }
+         .line1,
+         .line2 {
+             width: 70%;
+         }
+         .text {
+             width: 100%;
+             height: auto;
+         }
+         .item {
+             margin-bottom: 25px;
+         }
+     }
+     
+     @media (max-width: 550px) {
+         .slider {
+             height: 380px;
+         }
+         .phone1 {
+             left: 35px;
+             top: 54px;
+         }
+         .phone2 {
+             top: 115px;
+             left: 209px;
+         }
+         .phone1,
+         .phone2 {
+             border-radius: 7px;
+         }
+         .prev {
+             top: 39%;
+             left: -4px;
+         }
+         .slider .next {
+             top: 175px;
+         }
+         .pic img {
+             max-width: 151px;
+             margin-bottom: 14px;
+         }
+         .about-us {
+             height: auto;
+         }
+         .photo-item {
+             width: 70%;
+         }
+         .about__photo {
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+         }
+         .pen {
+             width: 76px;
+         }
+         .about__social {
+             margin-top: 8px;
+             margin-bottom: 25px;
+         }
+         .form__wrapper {
+             flex-direction: column;
+         }
+         .quote__form {
+             width: 96%;
+         }
+         #btn {
+             width: 105%;
+         }
+         .quote__title {
+             margin: 0 10px;
+         }
+         .contacts__form {
+             width: 95%;
+             margin-top: 25px;
+             margin-left: 0px;
+         }
+         .form__icon {
+             margin-top: 15px;
+             margin-left: 0px;
+             margin-bottom: 20px;
+             line-height: 5px;
+         }
+     }
+     
+     @media (max-width: 480px) {
+         .phone2 {
+             top: 115px;
+             left: 161px;
+         }
+         .phone1,
+         .phone2 {
+             border-radius: 7px;
+         }
+     }
+     
+     @media (max-width: 375px) {
+         .slider {
+             height: 221px;
+         }
+         .slider-phone {
+             height: 227px !important;
+             width: 375px !important;
+         }
+         .phone1 {
+             left: 40px;
+             top: 14px;
+             border-radius: 10px;
+         }
+         .phone2 {
+             top: 63px;
+             left: 145px;
+             border-radius: 10px;
+         }
+         .prev {
+             top: 36%;
+             left: 1px;
+         }
+         .slider .next {
+             top: 80px;
+             right: 0px;
+         }
+         .servises h1 {
+             padding-top: 30px;
+         }
+         .servises h1,
+         .servises .servises__text {
+             margin: 0 20px;
+         }
+         .pen {
+             width: 75px;
+         }
+         .line1,
+         .line2 {
+             width: 90%;
+         }
+         .portfolio__title,
+         .about-us__title p {
+             margin-left: 12px;
+         }
+         .portfolio__title {
+             padding-top: 45px;
+         }
+         .portfolio__tags {
+             margin-left: 12px;
+         }
+         .pictures {
+             margin-left: 10px;
+         }
+         .about-us__title h3 {
+             padding-top: 27px;
+         }
+         .photo-item {
+             width: 95%;
+         }
+         .pic img {
+             max-width: 151px;
+             margin-bottom: 14px;
+         }
+         .pictures__col {
+             margin-top: none;
+         }
+         .pictures__col img {
+             margin-bottom: none;
+         }
+         .pic img:not(:last-child) {
+             margin-right: 10px;
+         }
+         #btn {
+             width: 105%;
+         }
+         .quote__title {
+             margin: 0 10px;
+         }
+         .contacts__form {
+             width: 95%;
+             margin-top: 25px;
+             margin-left: 0px;
+         }
+         .form__icon {
+             margin-top: 15px;
+             margin-left: 0px;
+             margin-bottom: 20px;
+             line-height: 5px;
+         }
+         .footer__copyright {
+             display: none;
+         }
+         .footer .container2 {
+             justify-content: center;
+         }
+     }
